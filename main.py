@@ -49,10 +49,9 @@ def check_all_messages(message):
     response('Don\'t tell like that. Come on cheer up now!', ['sad','unhappy','depressed'], single_response=True)
     response('I am here serving you right now.',['doing','do'],single_response=True)
     response('I am a AI so my life is pretty much spent in serving you.',['how','is','life'],single_response=True)
-    response('I love you too!',['i','love','eat'],single_response=True)
-    # Longer responses
-    response(long.R_ADVICE, ['give', 'advice'], required_words=['advice'])
-    response(long.R_EATING, ['what', 'you', 'eat'], required_words=['you', 'eat','eating'])
+    response('I love you too!',['i','love','you'],single_response=True)
+    response('I dont\'t like to eat anything because I am a bot.',['what','would','you','like','to','eat'],single_response=True)
+    response('If I were you, I would go to the internet and type exactly what you wrote there!', ['give','me','advice'], single_response=True)
 
     best_match = max(highest_prob_list, key=highest_prob_list.get)
     # print(highest_prob_list)
@@ -71,4 +70,3 @@ def get_response(user_input):
 # Testing the response system
 while True:
     print('J.A.R.V.I.S: ' + get_response(input('You: ')))
-
