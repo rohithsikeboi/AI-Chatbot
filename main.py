@@ -47,7 +47,7 @@ def check_all_messages(message):
     response('Good to hear that.', ['my', 'name', 'is'], single_response=True)
     response('I dont know your name. I am sorry.', ['do','know','my','name'], single_response=True)
     response('Don\'t tell like that. Come on cheer up now!', ['sad','unhappy','depressed'], single_response=True)
-    response('I am here serving you right now.',['doing','do'],single_response=True)
+    response('I am here serving you right now.',['what','are','you','doing','do'],single_response=True)
     response('I am a AI so my life is pretty much spent in serving you.',['how','is','life'],single_response=True)
     response('I love you too!',['i','love','you'],single_response=True)
     response('I dont\'t like to eat anything because I am a bot.',['what','would','you','like','to','eat'],single_response=True)
