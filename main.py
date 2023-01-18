@@ -39,6 +39,7 @@ def check_all_messages(message):
     response('Hello!', ['hello', 'hi', 'hey', 'sup', 'heyo'], single_response=True)
     response('See you!', ['bye', 'goodbye'], single_response=True)
     response('I\'m doing fine, and you?', ['how', 'are', 'you', 'doing'], required_words=['how'])
+    response('Good to hear that.', ['i', 'doing', 'fine'], single_response=True
     response('You\'re welcome!', ['thank', 'thanks'], single_response=True)
     response('My Name is J.A.R.V.I.S which stands for -Just A Really Very Intelligent System-. And as you know I was made by Iron Man!',['your','name'], single_response=True)
     response('Yes, I know that I am nice.',['nice','noice'],single_response=True)
